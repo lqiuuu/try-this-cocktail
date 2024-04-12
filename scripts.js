@@ -1,6 +1,14 @@
+let drinkNames = [];
 async function getData() {
   try{
     const response = await fetch('https://www.thecocktaildb.com/api/json/v1/1/random.php');
+    // , {
+    // method: "GET",
+    // mode: "cors",  
+    // headers: {
+    //     "Content-type": "application/json",
+    //   },
+    // });
     if (response.status >= 200 && response.status < 300) {
     const data = await response.json();
     // console.log(data)
@@ -8,9 +16,13 @@ async function getData() {
     //   return key === "object" ? undefined : value;
     // });
       // return data;
-      console.log(data.drinks[0]);
-      let drink = toString(this.response)
-      console.log(drink)
+      // console.log(data.drinks[0].strDrink);
+      // console.log(drink)
+      const name =  data.drinks[0].strDrink
+      // console.log(name)
+      // drinkNames.push(name);
+      // console.log(drinkNames)
+      return name
     }
     console.log(response.status);
     console.log(response.statusText);
@@ -30,13 +42,12 @@ async function getData() {
   // })
   // document.getElementById("name").innerHTML = myText
   
-  getData();
+  let drinkName = getData().then(function (result){
+  // console.log(result)
+  document.getElementById("name").innerHTML = result;
+  });
   // var drink = JSON.parse(data)
- 
 
-  // function preload() {
-  //   types = loadJSON(data)
-  // }
 
  
   
