@@ -1,4 +1,4 @@
-let drinkNames = [];
+let drinkName;
 async function getData() {
   try{
     const response = await fetch('https://www.thecocktaildb.com/api/json/v1/1/random.php');
@@ -40,12 +40,20 @@ async function getData() {
   //   // Log each movie's title
   //   console.log(drink.strDrink)
   // })
-  // document.getElementById("name").innerHTML = myText
-  
-  let drinkName = getData().then(function (result){
+getData().then(function (result){
+  drinkName = result
+  console.log(drinkName)
+  document.getElementById("name").innerHTML = drinkName;
+})
+
+// 
+
+// function tryThis(){
+   
   // console.log(result)
-  document.getElementById("name").innerHTML = result;
-  });
+
+  // };
+
   // var drink = JSON.parse(data)
 
 

@@ -20,8 +20,7 @@ Using [CocktailDB](https://www.thecocktaildb.com/api.php) API.
 5. `control + c` to stop the server.
 
 **View Live Site:**<br />
-1. Visit [Glitch](https://relic-legend-cement.glitch.me)<br />
-  -- [Old Version](https://pineapple-bald-abrosaurus.glitch.me)
+1. Visit [Glitch]
 
 ## Notes & Documentation & Questions
 -- [Blog](https://lejingqiu.notion.site/Assignment-3-API-080900246f5a47f49d0af9d02ccf9364?pvs=4)<br />
