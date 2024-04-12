@@ -1,4 +1,5 @@
 let drinkName;
+let list;
 async function getData() {
   try{
     const response = await fetch('https://www.thecocktaildb.com/api/json/v1/1/random.php');
@@ -19,11 +20,13 @@ async function getData() {
       // console.log(data.drinks[0].strDrink);
       // console.log(drink)
       const name =  data.drinks[0].strDrink
+      const glass = data.drinks[0].strGlass
       // console.log(name)
       // drinkNames.push(name);
       // console.log(drinkNames)
-      return name
+      return {name, glass}
     }
+    
     console.log(response.status);
     console.log(response.statusText);
 
@@ -42,9 +45,14 @@ async function getData() {
   // })
 getData().then(function (result){
   drinkName = result
-  console.log(drinkName)
-  document.getElementById("name").innerHTML = drinkName;
+  console.log(drinkName);
+  list = Object.entries(drinkName);
+  let content = `<h1> ${list[0][1]} in a ${list[1][1]}</h1>`
+  console.log(list)
+  document.getElementById("name").innerHTML = content;
 })
+
+
 
 // 
 
