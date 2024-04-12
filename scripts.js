@@ -48,7 +48,7 @@ getData().then(function (result){
   console.log(drinkName);
   list = Object.entries(drinkName);
   let content = `<h1> ${list[0][1]} in a ${list[1][1]}</h1>`
-  console.log(list)
+  console.log(list);
   document.getElementById("name").innerHTML = content;
 })
 
