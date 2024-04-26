@@ -1,12 +1,14 @@
 html, body {
     height: 100%;
     margin: 0;
+    background-color: oldlace
     }
 
 h1 {
     font-family: "Noto Sans Display", sans-serif;
     text-align: center;
     text-transform: capitalize;
+    
 }
 
 #main {
@@ -18,12 +20,32 @@ h1 {
     align-items: center;
     justify-content: center;
 }
-
-
-button{
-    font-family: "Noto Sans Display", sans-serif;
+.thumb{
+    border-radius: 10px
 }
-#button{
+
+
+.button{
+    font-family: "Noto Sans Display", sans-serif;
+    background-color: goldenrod; /* Green */
+    border: none;
+    border-radius: 10px;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+.button:hover{
+    background-color: wheat;
+    color: goldenrod
+}
+
+#btnHolder{
     margin-top: 20px;
     text-align: center;
     

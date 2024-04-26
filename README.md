@@ -2,6 +2,7 @@
 ITP Dynamic Web Development 2024 Spring, Assignment #3.
 
 ## About
+The website gives you a ramdom cocktail and what type of glass it comes with.<br />
 Using [CocktailDB](https://www.thecocktaildb.com/api.php) API.
 
 ## Setup

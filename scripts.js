@@ -14,7 +14,7 @@ async function getData() {
       console.log(message);
 
       document.getElementById("name").innerText = message;
-      document.getElementById("photo").innerHTML = `<img src="${imgLink}" alt="Image" width=200 height=200>`
+      document.getElementById("photo").innerHTML = `<img src="${imgLink}" alt="Image" width=200 height=200 class= thumb>`
       // if(glass == "Highball glass"){
       //   document.getElementById('glass').innerHTML = "yay"
       // }
