@@ -8,14 +8,16 @@ async function getData() {
   
       const name =  data.drinks[0].strDrink;
       const glass = data.drinks[0].strGlass;
+      const imgLink = data.drinks[0].strDrinkThumb;
 
       const message = `\n${name}\nserved in a\n${glass}`;
       console.log(message);
 
       document.getElementById("name").innerText = message;
-      if(glass == "Highball glass"){
-        document.getElementById('glass').innerHTML = "yay"
-      }
+      document.getElementById("photo").innerHTML = `<img src="${imgLink}" alt="Image" width=200 height=200>`
+      // if(glass == "Highball glass"){
+      //   document.getElementById('glass').innerHTML = "yay"
+      // }
     }
     
     console.log(response.status);
