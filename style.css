@@ -1,3 +1,29 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    }
+
 h1 {
-    font-family: "Noto Sans Display", sans-serif;;
+    font-family: "Noto Sans Display", sans-serif;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+#main {
+    container-type: flex;
+    flex-flow: column;
+    height: 90%; 
+    width:100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button{
+    font-family: "Noto Sans Display", sans-serif;
+}
+#button{
+    
+    text-align: center;
+    
 }
