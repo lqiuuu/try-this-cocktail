@@ -24,7 +24,7 @@ Using [CocktailDB](https://www.thecocktaildb.com/api.php) API.
 1. Visit [Glitch](https://false-splendid-dime.glitch.me )
 
 ## Notes & Documentation & Questions
-    -- [Blog](https://lejingqiu.notion.site/Assignment-3-API-080900246f5a47f49d0af9d02ccf9364?pvs=4)<br />
+[Blog](https://lejingqiu.notion.site/Assignment-3-API-080900246f5a47f49d0af9d02ccf9364?pvs=4)<br />
 The blog countains:
 * Sketches
 * References
